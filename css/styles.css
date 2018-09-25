@@ -1,0 +1,12 @@
+#top2{
+    border-style:solid;
+}
+@media (min-width: 768px)
+.campaignVideo-overlay {
+       background-size: cover;
+       display: block;
+    margin: 0 auto;
+    fill: #ffffff;
+    width: 55%;
+    height: 55%;
+}
