@@ -1,12 +1,21 @@
 #top2{
     border-style:solid;
+    align-items: center;
+
+.righttop1{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-top:30px;
 }
-@media (min-width: 768px)
-.campaignVideo-overlay {
-       background-size: cover;
-       display: block;
-    margin: 0 auto;
-    fill: #ffffff;
-    width: 55%;
-    height: 55%;
+
+.righttop2{
+    min-width: 500px;
+}
+.campaignStatus{
+    
+}
+
+.campaignHeader{
+
 }
