@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> "Do I need shrink
     to fit?-->
@@ -14,83 +13,147 @@
     <meta name="author" content="Washee">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/styles.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Open+Sans|Ubuntu" rel="stylesheet">
 </head>
 
 <body>
-
-    <nav class="site-header sticky-top py-1">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="py-2" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
-                    <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
-                    <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
-                    <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
-                    <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
-                    <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
-                </svg>
-            </a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="media/washee logo dark.png" height="30" alt="">
+        </a>
+        <a class="navbar-brand navTitle" href="#">Washee Early Adopter Crowdfund</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto navSubs">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Something <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    
-
-    <div class="container" id="top2">
-        <div class="row">
-            <div class="col righttop1">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xu7RL3RdC30?rel=0" allow="autoplay; encrypted-media"
-                    allowfullscreen></iframe>
-            </div>
-            
-            <div class="col righttop2">
-                <div>
-
-                    <div class="campaignStatus">Campaign Status (Funding) or Such</div>
-
-                    <div class="campaignHeader">
-                        MATE X: Most affordable fully-loaded folding eBike
+    <div class="container" id="topContainer">
+        <div class="row firstRow align-items-center">
+            <div class="col-md-7">
+                <div class="top_carousel">
+                    <!--begin top_carousel-->
+                    <div id="carouselDiv" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner insideCarousel">
+                            <div class="carousel-item active videoContainer">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="mainVideo" src="https://www.youtube.com/embed/xu7RL3RdC30?rel=0"
+                                        allow="autoplay; encrypted-media" allowfullscreen alt="First slide"></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="media/2how.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="media/3sizes.png" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="media/4LEEA.png" alt="Fourth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="media/5benefits.png" alt="Fifth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="media/6test.png" alt="Sixth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe src="https://www.youtube.com/embed/videoseries?list=PLKQcCEC_ticOA_qRBhF53C3CbdNxqJxfx"
+                                        allow="autoplay; encrypted-media" allowfullscreen alt="Seventh slide"></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="media/8ad.png" alt="Eight slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="media/9drake.png" alt="Eight slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselDiv" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselDiv" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <div class="campaignTagline">
-                        The coolest, most powerful, high spec'd eBike at the lowest price on the market. Save up to 63%
-                    </div>
-                    <div class="projectOwner">Project Owner</div>
-                    <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_90,w_90/v1513362829/onb8erhozz93nqrfltob.jpg">
-                    <div class="campaignAuthor">Cocomojoe</div>
-                    <div class="campaignLocation">San Diego, CA</div>
-                    <span>$11,835,727</span>
-                    USD
-                    <span>raised</span>
-                    <span>by 22833 backers</span>
-                    <div><em>23671%</em>
-                        of $50,000&nbsp;</div>
-                    <span>flexible goal</span>
-                    <div><em>4</em>days&nbsp;left</div>
                 </div>
             </div>
-
-
-            
-            </div <!-- Optional JavaScript <script src="js/scripts.js">
-            </script>
-
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                crossorigin="anonymous"></script>
+            <!--end top_carousel-->
+            <!--begin top_content-->
+            <div class="col-md-5">
+                <div class="top_content">
+                    <div class="fundingState">Campaign Status: funding</div>
+                    <div class="campaignHeader">
+                        WASHEE: The World's First Bong & Pipe Cleaning Machine
+                    </div>
+                    <div class="campaignTagline">
+                        <p>
+                            Washee cleans your
+                            bongs
+                            and pipes using only water and under 20 minutes!
+                            <span class="superscript"><a href="#">*</a></span></p>
+                        <p id="lastParagraph">This Early Adopter crowdfund contains
+                            exclusive deals. Learn more <a href="#">here</a>.</p>
+                    </div>
+                    <div class="ownerAndBackit container">
+                        <div class="row align-items-center">
+                            <div class="col campaignOwner">
+                                <p class="project_owner_title">Project Owner</p>
+                                <a href="#"><img id="washeelogo" src="media/washee_logo.png"></a>
+                                <div class="campaignLocation">San Diego, CA</div>
+                            </div>
+                            <div class="col-9">
+                                <a class="btn btn-danger align-middle btn-lg btn-block backitButton" href="#" role="button">Get
+                                    Washee!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaignStatus">
+                        <div class="units_left"><span id="number_left">17 </span>Early Adopter units left!</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+                                aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width: 89%">89% Funded</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End toContainer-->
+    <!-- Optional JavaScript <script src="js/scripts.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
