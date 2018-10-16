@@ -6,7 +6,6 @@ body{
 }
 nav{
     font-family:'Roboto', sans-serif;
-    
     text-align: center;
     font-size:13px;
 }
@@ -74,12 +73,14 @@ nav{
 {
   content: '>';
   font-size: 55px;
+  font-weight:900;
   color: #3eb058;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 55px;
+  font-weight:900;
   color: #3eb058; /*c82333*/
 }
 .top_content{
@@ -156,7 +157,6 @@ nav{
 }
 
 .campaignStatus{
-
 }
 
 .units_left{
@@ -165,5 +165,103 @@ nav{
     text-align: right;
 }
 #number_left{
+}
 
+.headTabs{
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.contentTabs{
+    padding-top: 30px;
+    /*padding-left:30px;*/
+    /*padding-right:30px;*/
+}
+
+.bodyTabs{
+    font-family: 'Oswald', sans-serif;
+    font-size:15px;
+}
+.beautifulWeed{
+    max-width:100%;
+}
+
+#perksDivided{
+    text-align: center;
+    padding-bottom:15px;
+    /*padding-top:10px;*/
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+p{
+    text-align:justify;
+}
+
+.productSizes{
+    max-width:70%;
+}
+.productImages{
+ 
+}
+.subtitlesProduct{
+    text-align:center;
+}
+.productsContainer{
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color: e5e7ea;
+    border-bottom-width:1px;
+    border-top-width:1px;
+}
+.performance{
+    
+}
+.specsimg{
+    max-width:100%;
+}
+#cleaningTimeimg{
+    max-width:100%;
+}
+
+.founders{
+    border-style:solid;
+    border-width:1px;
+    border-color: #e5e7ea;
+    margin:5%;
+    font-size:12px;
+}
+.Faqs h2{
+    padding-top:0px;
+    padding-bottom:0px;
+    font-size:18px;
+    font-weight:bold;
+}
+.selectPerk{
+    margin-bottom:10px;
+}
+
+.perksCols{
+    text-align:center;
+    border-style:solid;
+    border-width:1px;
+    border-color: #e5e7ea;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.perkTitle{
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.bottomBar{
+    background-color:#F8F9FA;
+    color:black;
+    font-size:14px;
+    margin-top:40px;
+    min-height:40px;
 }

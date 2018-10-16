@@ -15,6 +15,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Open+Sans|Ubuntu" rel="stylesheet">
+    <link rel="shortcut icon" href="media/washeeLogo.ico">
 </head>
 
 <body>
@@ -118,42 +119,770 @@
                             Washee cleans your
                             bongs
                             and pipes using only water and under 20 minutes!
-                            <span class="superscript"><a href="#">*</a></span></p>
-                        <p id="lastParagraph">This Early Adopter crowdfund contains
-                            exclusive deals. Learn more <a href="#">here</a>.</p>
+
+                            <!--<a href="#nav-product#Performance"><span class="superscript">*</span></a></p>-->
+                            <a href="#" id="asterisk">*</a>
+
+
+                            <p id="lastParagraph">This Early Adopter crowdfund contains
+                                exclusive deals. Learn more <a href="#nav-campaign" id="learnHere">here</a>.</p>
                     </div>
                     <div class="ownerAndBackit container">
                         <div class="row align-items-center">
                             <div class="col campaignOwner">
                                 <p class="project_owner_title">Project Owner</p>
-                                <a href="#"><img id="washeelogo" src="media/washee_logo.png"></a>
+                                <img id="washeelogo" src="media/washee_logo.png">
                                 <div class="campaignLocation">San Diego, CA</div>
                             </div>
                             <div class="col-9">
-                                <a class="btn btn-danger align-middle btn-lg btn-block backitButton" href="#" role="button">Get
-                                    Washee!</a>
+                                <a class="btn btn-danger align-middle btn-lg 
+                                btn-block backitButton"
+                                    href="#" role="button" data-celery="5bc2343fdde132140084f96f">
+                                    Get Washee!
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="campaignStatus">
-                        <div class="units_left"><span id="number_left">17 </span>Early Adopter units left!</div>
+                        <div class="units_left"><span class="number_left"></span> Early Adopter limited edition units left!</div>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
-                                aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width: 89%">89% Funded</div>
+                                aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" id="progressBar" > <!-- style="width: 89%" was inside -->
+                                <span id="barLegend"></span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--End toContainer-->
+    <!--End topContainer-->
+    <!--Begin bottom tabs and products section-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div>
+                    <!--Empiezan Tabs-->
+                    <div class="contentTabs headTabs">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-vision-tab" data-toggle="tab" href="#nav-vision"
+                                role="tab" aria-controls="nav-home" aria-selected="true">vision</a>
+                            <a class="nav-item nav-link" id="nav-campaign-tab" data-toggle="tab" href="#nav-campaign"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">campaign</a>
+                            <a class="nav-item nav-link" id="nav-product-tab" data-toggle="tab" href="#nav-product"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">product</a>
+                            <a class="nav-item nav-link" id="nav-company-tab" data-toggle="tab" href="#nav-company"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">company</a>
+                            <a class="nav-item nav-link" id="nav-faqs-tab" data-toggle="tab" href="#nav-faqs" role="tab"
+                                aria-controls="nav-contact" aria-selected="false">faqs</a>
+                        </div>
+                    </div>
+                    <div class="tab-content contentTabs bodyTabs" id="nav-tabContent">
+                        <div class="tab-pane show active" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+                            <h1>Our Vision</h1>
+                            <p>The why of Washee. We love our greens. Sure, there are cool vape pens available
+                                but nothing has ever truly replaced smoking buds for us. With legalization, the
+                                quality of our greens could not be better. And that's what it's really about for us.
+                            </p>
+                            <p>
+                                We are a team of tinkerers at heart. When we first conceived Washee, we didn't have
+                                a particular technology in mind. Like other smokers, we had to deal with the tar
+                                and resins that accumulate in our pipes. As the pipe gets dirtier, you start wasting
+                                greens as the airflow in your pipe constraints and the flavor of your greens gets
+                                tainted.
+                            </p>
+                            <p>
+                                Chemical cleaners for pipes suck. You're telling me I have to get my hands
+                                dirty to clean them? Really, that's the best you can do?
+                                We knew deep in our hearts there was an easier
+                                and convenient way to get pipes clean. After all, cannabis is no longer a taboo. It's
+                                an important and large market.
+                            </p>
+                            <p>That's what it's all about for us. We don't see ourselves as a company that makes pipes
+                                cleaners.
+                                We see ourselves as a company dedicated to help you make the most out of your greens
+                                and
+                                enjoy them to their fullest.
+                            </p>
+                            <img class="beautifulWeed" src="media/beautifulWeed.jpg">
+                        </div>
+                        <div class="tab-pane" id="nav-campaign" role="tabpanel" aria-labelledby="nav-campaign-tab">
+                            <h1>What is our Early Adopter crowdfund campaign about?</h1>
+                            <p>
+                                Early adopters are the people who start using or product
+                                before anyone else. Early adopters are arguably the
+                                spark of innovation. They are the first backers in any
+                                new trend.
+                            </p>
+                            <p>
+                                This help comes when a company needs it most: in its infant
+                                stages. Washee is in such state. We are a startup bootstrapped by
+                                its own founders. We've
+                                <a href="https://www.youtube.com/watch?list=PLKQcCEC_ticOA_qRBhF53C3CbdNxqJxfx&v=QvrCCpVDSkE">
+                                    experimented and tested</a>
+                                the past year to create the most innovative pipe cleaner out
+                                on the market.
+                            </p>
+                            <p>
+                                However, the success of a product goes beyond its technical capabilities.
+                                It also involves a great product presentation, HD photos, great video
+                                commercials,
+                                web presence and promotion to fully bring to life and that's exactly
+                                what this campaign is for.
+                            </p>
+                            <p>
+                                We've developed the product and source manufacturing. Now, we
+                                need your help to get to the next level. To get Washee out there.
+                                This campaign is a prelude to an upcoming Indiegogo campaign. However,
+                                unlike campaigns hosted on Kickstarter and Indiegogo, this campaign
+                                is constraint by number of units that we will sell rather than time.
+                            </p>
+                            <p>
+                                The units on this campaign are reserved for our early adopters
+                                and contain special rewards and discounts. No more units will be sold
+                                when the campaign is 100% fulfilled.
+                            </p>
+                            <p> Most startups sell their first version
+                                units to their most important contributors, early adopters,
+                                and then forget about them.
+                            </p>
+                            <p>
+                                We want to be different. The rewards on this campaign
+                                are meant to turn the highest risk Early Adopters get
+                                into a unique gift we wont give away to others.
+                            </p>
+                            <h1>Perks</h1>
+                            <h4 id="perksDivided">The Early Adopter perks are divided in 2 types:</h4>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        Pay full price for a unit and obtain a
+                                        limited edition voucher that is exchangeable
+                                        for a future version of Washee of
+                                        similar size.
+                                    </div>
+                                    <div class="col">
+                                        Get a unit with a super discount only available on
+                                        this campaign.
+                                    </div>
+                                </div>
+                            </div>
+                            <h1>Use of Funds</h1>
+                            <p>
+                                This campaign is limited to <span class="numberSelling"></span> units.
+                                From the money raised, the COG (cost of good) is saved from every order
+                                along with shipping charges. This means that the portion of the Funds
+                                raised from this campaign needed to fulfill the orders is retained
+                                (and then some). This means the Early adopter units are guaranteed
+                                separately from the Indiegogo campaign and they also ship first.
+                            </p>
+                            <p>
+                                The remainder of the funds will have the following uses:
+                                <uL>
+                                    <li>Creation of manufacturing-type prototype for all sizes.</li>
+                                    <li>Creation of media content for Indiegogo promotion (videos, photos, etc).</li>
+                                </uL>
+                            </p>
+                            <h1>Plan & Challenges</h1>
+                            <p>The production of units for this campaign will be part of the production
+                                as the units we will sell on the Indiegogo campaign. We do this to
+                                take advantage of economies of scale. However, the Early Adopter orders
+                                will be fulfilled first.
+                            </p>
+                            <p>
+                                The biggest challenge a physical product has from a crowdfund perspective lies
+                                with parts that require heavy tooling. This is a consideration we had from the
+                                beginning when we started development. We were more interested in designing
+                                something that we could fulfill at variable quantities.
+                            </p>
+                            <p>
+                                We purposely stayed away
+                                from tooling at the cost of somewhat higher cost per part and some aesthetics.
+                                However, this helps us ensure we can deliver a quality product that takes into
+                                account any campaign outcome. This puts us in a comfortable position from a
+                                production stand-point. Learn more about our engineering background
+                                <a href="#" id="learnFounders">here</a>.
+                            </p>
+                            <h2 id="timeline">Timeline</h2>
+                            <p>Our timeline has been estimated conservatively. It is based on the longest we foresee
+                                each event taking place.
+                            </p>
+                            <ol>
+                                <li>Early Adopters Crowdfund Campaign. Start in October. Duration: 3 months.</li>
+                                <li>Manufacturing-type prototypes, media creation, etc. Start in January Duration: 3
+                                    months. </li>
+                                <li>Indiegogo Campaign. Start in April. Duration: 1 month.</li>
+                                <li>Manufacturing orders. Start in May. Duration: 2 months.</li>
+                                <li>Shipping orders. Start in July. Duration: 1 month. </li>
+
+                            </ol>
+                            <h1>Other Ways You Can Help</h1>
+                            <p>
+                                If you are not ready to buy Washee but would still like to help,
+                                then the best thing you can do is to share this campaign with your friends!
+                                Getting the word out there goes a long way to bringing this project into reality.
+                                You can also win a free Washee if you share with enough friends! Sign-up at
+                                <a href="https://www.washee.net/">washee</a> and use your share link to accumulate
+                                points
+                                towards a free Washee.
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="nav-product" role="tabpanel" aria-labelledby="nav-product-tab">
+                            <h1>What is Washee?</h1>
+                            <p>Washee is the world's first bong and pipe cleaning machine for the home.
+                                Washee cleans your bongs and pipes using nothing but water.
+                                Say goodbye to bottle cleaners, ziploc bags, and getting your hands dirty.
+                                Most bongs and pipes get cleaned in 20 minutes (Check out our <a href="#Performance">
+                                    performance section</a>)
+                            </p>
+                            <p>Washee uses a combination of heat and mechanical action to leave
+                                your bongs and pipes like the day you bought them. It's harmless
+                                on your pieces and also disinfects them. </p>
+                            <h2>How Does Washee Work?</h2>
+                            <ol>
+                                <li>You place your bong and pipes inside Washee ensuring no air remains inside.</li>
+                                <li>You then fill Washee with Water.</li>
+                                <li>Select your cleaning time. Most pieces will need to run for 20 min.
+                                    (See <a href="#Performance">performance</a> section)</li>
+                                <li>Wait for cycle to complete and you are done!</li>
+                            </ol>
+                            <div class="productsContainer">
+                                <h2 class="subtitlesProduct">Washee Comes in 3 Sizes</h2>
+                                <div class="container productSizes">
+                                    <div class="row">
+                                        <div class="col-md text-center productImages">
+                                            <h4>Personal</h4>
+                                            <img class="img-fluid" src="media/personal.png">
+                                            <p>This is our smallest unit. It's perfect for
+                                                spoon pipes and individual pieces.
+                                            </p>
+                                        </div>
+                                        <div class="col-md text-center productImages">
+                                            <h4>Bong</h4>
+                                            <img class="img-fluid" src="media/bong.png">
+                                            <p>You like to invest in larger & artistic bongs or pipes?
+                                                Then this Washee is perfect for you.
+                                            </p>
+                                        </div>
+                                        <div class="col-md text-center productImages">
+                                            <h4>Commercial</h4>
+                                            <img class="img-fluid" src="media/commercial.png">
+                                            <p>Would you like to generate revenue out of offering a bong
+                                                and pipe cleaning service? This Washee is able to clean several
+                                                pieces simultaneously and it's equipped with a cooling system
+                                                to run non-stop.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="productsContainer">
+                                <h2 class="subtitlesProduct"> Washee Benefits</h2>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md text-center">
+                                            <h4>Easy Breezy</h4>
+                                            <img class="img-fluid" src="media/easy.png">
+                                            <p>Get your pipes perfectly clean with minimum effort!
+                                                No more ziploc bags and having to shake to get resin out.
+                                            </p>
+                                        </div>
+                                        <div class="col-md text-center">
+                                            <h4>Save Money</h4>
+                                            <img class="img-fluid" src="media/economic.png">
+                                            <p>Washee is energy efficient. Running the personal version
+                                                30 min/week for a whole year will cost 25 cents* (based on USA data).
+                                            </p>
+                                        </div>
+                                        <div class="col-md text-center">
+                                            <h4>Environmental</h4>
+                                            <img class="img-fluid" src="media/environmental.png">
+                                            <p>Washee uses only water and electricity to clean.
+                                                No chemicals, no bottles = less pollution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="performance">
+                                <h1>Specs, Performance, Limitations & Recommended Usage</h1>
+                                <h2>Specifications</h2>
+                                <img class="img-fluid specsimg" src="media/specs.png">
+                                <h2 id="Performance">Performance</h2>
+                                <p>The cleaning effect per given volume is similar across all 3 Washee units.
+                                    The difference between the units lies in the size of the cleaning volume.
+                                    The wattage is increased accordingly in each one to have to maintain the
+                                    cleaning effect/volume ratio. This means that the guidelines provided here
+                                    apply to all the units.
+                                </p>
+                                <p>
+                                    The cleaning effect is also uniformly distributed across the cleaning tank.
+                                    This is not true exactly but it is not a large enough gradient to make it
+                                    noticeable.
+                                    This means that you can clean several pieces simultaneously on the larger units.
+                                    This is particularly relevant for the commercial unit where you may want to
+                                    maximize both time and money by cleaning as many pieces as once as possible.
+                                    However, if you purchased the Bong sized unit, you could instead clean several
+                                    smaller pieces if you wished to.
+                                </p>
+                                <p>
+                                    One of the main cleaning characteristics you would want to know
+                                    is the cleaning time given a determined amount of usage of your pipe or bong.
+                                    Washee has an exponential curve representing its cleaning cycle duration as a
+                                    function of bong/pipe usage.
+                                </p>
+                                <img class="img-fluid" id="cleaningTimeimg" src="media/cleaningTime.png">
+                                <p>
+                                    All of this translate to Washee being better the more often you use it.
+                                    There are several <a href="#reasons">reasons why you want to clean your pieces
+                                        more often than not.</a>
+                                </p>
+                                <p>
+                                    The geometry of bongs and pipes is a very diverse one. From the incredibly artistic
+                                    to
+                                    the purely functional, bongs and pipes come in all kinds of shapes. For this
+                                    reason,
+                                    it is impractical to give exact formulas for cleaning times given a specific usage.
+                                    However, expect your pieces to fall within <a>the recommended usage</a> at worst
+                                    (meaning that your pipe could even go longer without cleaning - <a href="#reasons">not
+                                        that
+                                        you would want to do that</a>).
+                                </p>
+                                <p>
+                                    Washee's cleaning effect is tied to the surface area of water in contact with the
+                                    tars and
+                                    resins that need to be removed. This means that its performance will be best on
+                                    pieces with large cavities (such as bongs) and it will have lower performance
+                                    on tight passage ways inside the pipe (this is specially true of artistic pipes).
+                                    If you are cleaning pieces that have long and very narrow passageways, stick to the
+                                    guideline
+                                    of cleaning the piece regularly; specially if it is used often.
+                                </p>
+                                <h2>Limitations</h2>
+                                <p>
+                                    As the cleaning frequency of your piece is reduced, the cleaning time
+                                    grows exponentially. If a pipe has been used over an extended period of time
+                                    without cleaning, Washee may run into a situation where it will either need
+                                    a large amount of time to clean the pipe (in terms of hours) or in a different
+                                    case,
+                                    it will be unable to remove resin deposits that form inside.
+                                </p>
+                                <p>
+                                    If you have a piece that hasn't been cleaned in months, and you try to clean it
+                                    with
+                                    Washee, it may take several hours or cycles to do so. However, in some cases, large
+                                    resin
+                                    and tar deposits are formed inside that are not able to escape or dissolve in the
+                                    water.
+                                    This is particularly true of pipes with narrow cavities.
+                                </p>
+                                <p>It is worthy to note that this is
+                                    not a problem particular to Washee. All pipe cleaners have this same issue. Perhaps
+                                    you've tried using a bottle cleaner before only to find resin rocks forming inside
+                                    which you have to poke and break. This same phenomena can occur with Washee if a
+                                    piece has not been cleaned
+                                    in a long time. Albeit, Washee
+                                    has this problem much less than other cleaners because of the way it removes the
+                                    resin.
+
+                                </p>
+                                <p>
+                                    Why does this happen at all? Resin is the like of substance that likes to stick to
+                                    itself.
+                                    As you remove it from the glass, it finds other particles similar to itself. If you
+                                    haven't
+                                    cleaned your piece in a long time, there will be enough resin to attract to itself
+                                    faster than it can dissolve in the medium. It is worthy to note, however, that you
+                                    will not
+                                    encounter this issue if Washee is used as recommended.
+                                </p>
+                                <h2>Recommended Usage</h2>
+                                <p>We've covered Washee's performance and limitations. I hope we gave you a
+                                    good overview of Washee's effectiveness which is better when used regularly.
+                                    However, performance aside, there are other reasons why it is best
+                                    to clean bongs and pipes regularly:
+                                </p>
+                                <h3 id="reasons">Reasons to clean your pipes more often</h3>
+                                <ul>
+                                    <li>Bacteria and mold thrive on a dirty pipe and you get exposed to it if you don't
+                                        clean
+                                        your pipe or bong.
+                                    </li>
+                                    <li>
+                                        You start wasting precious greens. As we mentioned, the components in the tars
+                                        and resins
+                                        attract each other. The more tar and resins you have inside your pipe, the more
+                                        of the
+                                        psychoactive
+                                        components of cannabis keep getting stuck to it, which means your smoke has
+                                        less.
+                                    </li>
+                                    <li>
+                                        You waste even more precious greens. The accumulated tar and resins constrain
+                                        airflow which greatly
+                                        reduces the combustion efficiency of your pipe.
+                                    </li>
+                                    <li>
+                                        The more frequently you clean your pipe, the shorter the cleaning cycles are.
+                                        This means you
+                                        spend less on electricity.
+                                    </li>
+                                    <li>A dirty bong or pipe taints the flavor of your bud. Having a clean piece allos
+                                        you to
+                                        taste the smoke at its best.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Did we convinced you you should clean your pieces regularly? The cool thing is that
+                                    Washee makes it extremely easy. You'll have it right there and then and it will do
+                                    all the work for you. How cool is that? win/win.
+                                </p>
+                                <h3>How often do I need to clean my pieces with Washee?</h3>
+                                <p>
+                                    Washee is designed so that you clean your piece
+                                    after smoking 1/4 oz through it between 20 to 30 min. This is about
+                                    every week or biweekly for many daily users. It's hard to come up with
+                                    exact formulas for cleaning time because geometries vary so wildly among pieces
+                                    but expect this range at its worst.
+                                </p>
+                                <p>
+                                    To give you a more tangible idea, a normal size spoon pipe with 1/4 oz
+                                    smoked through it will require a 20 min cleaning cycle.
+                                    Pipes with wide cavities can wait even longer for a
+                                    similar cleaning time although we don't recommend it.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="nav-company" role="tabpanel" aria-labelledby="nav-company-tab">
+                            <h1>About Washee</h1>
+                            <p>
+                                We are a group of engineers who enjoy cannabis.
+                                We are the kind of people that prefer a smoke at the end of the day rather
+                                than a beer. Needless to say, we are cannabis lovers!
+                                We started Washee to create cool products for smokers. In our opinion,
+                                there aren't enough out there!
+                                As a team, we have extensive experience in product development, manufacturing,
+                                consumer innovation, and electronics.
+                                Washee, Inc is a California corporation located in San Diego, CA. Get in touch by
+                                emailing us at <a href="mailto:hi@washee.net">hi@washee.net</a>
+                            </p>
+                            <h2>Story</h2>
+                            <h4>by founder Joe Gregory</h4>
+                            <p>
+                                It was late fall in Michigan 2016. I was working at a innovation company and we
+                                were amidst fulfilling a new product. Those are usually busy times, so when I got home
+                                that day, I was ready to relax and smoke. I packed my bowl and tried to light it up.
+                                I couldn't get a decent hit out. (Both) my pipes were heavily clogged.
+                            </p>
+                            <p>
+                                I was out of cleaner, so I had to go get some. "Are you s@itting me." That's
+                                the last thing you want to do coming home from work. I reluctancy drove to the
+                                store, bought some cleaners, put my pipes in ziploc bags and started shaking it.
+                            </p>
+                            <p>
+                                While I was doing that, I started video chatting with my long time friend from
+                                engineering
+                                school Mario Rodriguez. We had been planning to branch off our jobs and create
+                                something
+                                by ourselves. We had ideas on the drawing board, but during that conversation, I
+                                was explaining my pain to Mario getting the cleaners and said "there has to be a better
+                                way."
+                                Light bulbs turned on. That was the beginning of Washee.
+                            </p>
+                            <p>
+                                We knew we wanted it to
+                                be 100% water based because what could be cooler than that?
+                                2 years later and we've experimented and tested every conceivable way
+                                possible in which you could clean a pipe using water. We have a understanding
+                                of the methods for achieving this outcome in a friendly and energy efficient product.
+                            </p>
+                            <p>
+                                Today, we've done all the engineering and sourcing. We are ready to
+                                take Washee out on the market and we hope you can be a part of this new story with us.
+                            </p>
+                            <h2 id="founders">Founders</h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md founders">
+                                        <h2>Joseph E. Gregory</h2>
+                                        <p>I have experience in consumer innovation, product development
+                                            and prototyping. I've successfully helped developed
+                                            consumer products for companies like Whirlpool and Gill.
+                                        </p>
+                                        <img class="img-fluid" src="media/joe.png">
+                                        <p><a href="https://www.linkedin.com/in/josephegregory/">
+                                                Linkedin Profile</a></p>
+                                    </div>
+                                    <div class="col-md founders" id="theFounders">
+                                        <h2>Mario Rodriguez</h2>
+                                        <p>When it comes to quality manufacturing, nobody beats Mario.
+                                            Mario has experience delivering complex systems on time
+                                            and on budget across a global supply chain. Experience working
+                                            for Bosch and Chrysler.
+                                        </p>
+                                        <img class="img-fluid" src="media/mario.png">
+                                        <p><a href="https://www.linkedin.com/in/mario-rodriguez-garcia/">
+                                                Linkedin Profile</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="nav-faqs" role="tabpanel" aria-labelledby="nav-faqs-tab">
+                            <div class="Faqs">
+                                <h1>Frequently Asked Questions</h1>
+                                <h2>
+                                    What is the estimate time the units will ship?
+                                </h2>
+                                <p>
+                                    Early Adopter units are the first to ship and are scheduled for July 2019.
+                                    Check out our timeline <a href="#" id="hereToTimeline">here</a>.
+                                </p>
+                                <h2>Where do you ship to?</h2>
+                                <p>This campaign is only delivering within USA. Extended shipping will
+                                    be available during Indiegogo campaign.
+                                </p>
+                                <h2>
+                                    I want to wait for the Indiegogo campaign instead. where
+                                    do I sign up?
+                                </h2>
+                                <p>
+                                    You can sign-up to be alerted prior to our Indiegogo launch at
+                                    <a href="https://www.washee.net/">this landing page.</a>
+                                </p>
+                                <h2>
+                                    I want to spread the word about Washee and collect points
+                                    to earn a free unit. How do I do that?
+                                </h2>
+                                <p>
+                                    Sign up at <a href="https://www.washee.net/">our landing page</a> and use the share
+                                    link
+                                    at the following window to collect points and earn rewards. New email
+                                    sign-ups need to pass our fraud prevention system in order to count as points.
+                                    Making fake email accounts wont work.
+                                </p>
+                                <h2>How can I get in contact?</h2>
+                                <p>Email us at <a href="mailto:hi@washee.net">hi@washee.net</a></p>
+                                <h2>Can Washee clean more than one bong/pipe at a time?</h2>
+                                <p>Yes, you can clean as many pieces as you can fit. However,
+                                    only the section of the pieces that are in contact with water
+                                    will get cleaned.
+                                </p>
+                                <h2>Can I become an investor?</h2>
+                                <p>We would love to talk. Email <a href="mailto:investors@washee.net">investors@washee.net</a>.</p>
+                                <h2>What is different between this campaign and the upcoming Indiegogo?</h2>
+                                <p>There are 2 differences: the perks and the campaign metrics.
+                                    The perks differ in that the 2x1 voucher and the discounts from this campaign are
+                                    unique to this campaign
+                                    only. The Indiegogo campaign will no have the 2x1 voucher and the discounts wont be
+                                    as large.
+                                    They are also different in the metrics. While the Indiegogo campaign is limited by
+                                    time (1 month),
+                                    this campaign is instead limited by the amount of units being sold.</p>
+                                <h2>Why are you throwing a crowdfund campaign on your site before launching
+                                    an Indiegogo campaign?</h2>
+                                <p>Contrary to popular belief, running a crowdfund campaign is not without costs (and
+                                    it's also not cheap). From having presentable prototypes to HD videos and photos,
+                                    going to
+                                    events, etc, the costs can be significant. In addition, we are a group of engineers
+                                    and
+                                    there are areas (such as marketing) in which we need help.
+                                    Running this campaign will provide us with the
+                                    resources to promote the product adequately. The success of a product goes beyond
+                                    engineering.
+                                    Presentation and
+                                    proper marketing play an important role in seeing a brand succeed. The funds from
+                                    this campaign
+                                    will provide us with that. We thought the best way to do it would be to give
+                                    special perks to our
+                                    Early Adopters.
+                                    <h2>Can I exchange my 2x1 voucher for a current version?</h2>
+                                    <p>Yes, you can exchange your 2x1 future voucher for a current version. Please get
+                                        in contact so
+                                        we can do the proper arrangements.
+                                    </p>
+                                    <h2>I want to purchase the commercial unit and offer a
+                                        cleaning service. How can I charge?
+                                    </h2>
+                                    <p>Here we provide 2 approaches you can take.
+                                        You can either charge your customers a monthly fee and clean any pieces they
+                                        bring in or
+                                        you can charge per cleaning cycle. You can wash as many pieces as you can fit
+                                        inside Washee
+                                        (ensuring there is no air trapped inside). The most economic approach will be
+                                        to collect
+                                        pieces that will be cleaned and try to make them in a single batch (or as many
+                                        needed). Consumers
+                                        can pick them up the next day or so which brings them back to your store.
+                                        Running the commercial unit for 1 hour will spend less than $0.10 in electric
+                                        cost (US average).
+                                        Charging a couple of bucks for spoon pipes and similar sizes and more for bongs
+                                        and such will
+                                        be profitable.
+                                    </p>
+                                    <h2></h2>
+                                    <p></p>
+                                    <h2></h2>
+                                    <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Terminan Tabs-->
+            </div>
+            <div class="col-md-3">
+                <div class="contentTabs bodyTabs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col fundingState selectPerk">
+                                Select a Perk
+                            </div>
+                        </div>
+                        <!--start indivPERKS-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="perksCols">
+                                    <div class="perkTitle">
+                                        Personal Washee 2x1 Future Version
+                                    </div>
+                                    <img class="img-fluid" src="media/personalLEEA.png">
+                                    <div class="perkCost">$299.99</div>
+                                    <div class="perkBenefit">Obtain a once in a
+                                        lifetime voucher
+                                        exchangeable for a future version of similar size!
+                                    </div>
+                                    <button class="perksButton btn btn-danger align-middle btn-lg 
+                                    btn-block backitButton"
+                                        data-celery="5b984a891317ce140016e145">
+                                        Get this perk!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="perksCols">
+                                    <div class="perkTitle">
+                                        Personal Washee 50% off
+                                    </div>
+                                    <img class="img-fluid" src="media/personalLEEA.png">
+                                    <div class="perkCost">$149.99</div>
+                                    <div class="perkBenefit">Obtain a once in a
+                                        lifetime discount!
+                                    </div>
+                                    <button class="perksButton btn btn-danger align-middle btn-lg 
+                                        btn-block backitButton"
+                                        data-celery="5bc227960581f91400aa2489">
+                                        Get this perk!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="perksCols">
+                                    <div class="perkTitle">
+                                        Bongs Washee 2x1 Future Version
+                                    </div>
+                                    <img class="img-fluid" src="media/bongLEEA.png">
+                                    <div class="perkCost">$649.99</div>
+                                    <div class="perkBenefit">Obtain a once in a
+                                        lifetime voucher
+                                        exchangeable for a future version of similar size.
+                                    </div>
+                                    <button class="perksButton btn btn-danger align-middle btn-lg 
+                                            btn-block backitButton"
+                                        data-celery="5bc229b60581f91400aa2495">
+                                        Get this perk!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="perksCols">
+                                    <div class="perkTitle">
+                                        Bongs Washee 45% off
+                                    </div>
+                                    <img class="img-fluid" src="media/bongLEEA.png">
+                                    <div class="perkCost">$357.49</div>
+                                    <div class="perkBenefit">Obtain a once in a
+                                        lifetime discount!
+                                    </div>
+                                    <button class="perksButton btn btn-danger align-middle btn-lg 
+                                                btn-block backitButton"
+                                        data-celery="5bc22b89dde132140084f946">
+                                        Get this perk!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="perksCols">
+                                    <div class="perkTitle">
+                                        Commercial Washee 2x1 Future Version
+                                    </div>
+                                    <img class="img-fluid" src="media/commercialLEEA.png">
+                                    <div class="perkCost">$1,399.99</div>
+                                    <div class="perkBenefit">Obtain a once in a
+                                        lifetime voucher
+                                        exchangeable for a future version of similar size.
+                                    </div>
+                                    <button class="perksButton btn btn-danger align-middle btn-lg 
+                                                    btn-block backitButton"
+                                        data-celery="5bc22df4871b051400ac1848">
+                                        Get this perk!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="perksCols">
+                                    <div class="perkTitle">
+                                        Commercial Washee 45% off
+                                    </div>
+                                    <img class="img-fluid" src="media/commercialLEEA.png">
+                                    <div class="perkCost">$769.99</div>
+                                    <div class="perkBenefit">Obtain a once in a
+                                        lifetime discount!
+                                    </div>
+                                    <button class="perksButton btn btn-danger align-middle btn-lg 
+                                                        btn-block backitButton"
+                                        data-celery="5bc22e50871b051400ac184a">
+                                        Get this perk!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END indivPERKS-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End bottom tabs and products section-->
+    <div class="bottomBar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    2018 Washee, Inc. All rights reserved.
+                </div>
+                <div class="col-md">
+                    <a href="mailto:hi@washee.net">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript <script src="js/scripts.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script async src="https://www.trycelery.com/js/celery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="scripts/functionality.js"></script>
 </body>
 
 </html>
