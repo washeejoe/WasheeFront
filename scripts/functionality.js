@@ -1,34 +1,10 @@
 "use strict"
 
-const UNITS_BEING_SOLD = 10;
-const INV_ADJUST = 1000;
+let unitsLeft = units_being_sold - totalUnitsSold;
 
-let inventoryPersonal2x1=1000;
-let inventoryPersonal1x1=1000;
-let inventoryBong2x1=1000;
-let inventoryBong1x1=1000;
-let inventoryCommercial2x1=999;
-let inventoryCommercial1x1=1000;
-
-//Units sold of each one
-let soldPersonal2x1 = INV_ADJUST - inventoryPersonal2x1;
-let soldPersonal1x1 = INV_ADJUST - inventoryPersonal2x1;
-let soldBong2x1 = INV_ADJUST - inventoryBong2x1;
-let soldBong1x1 = INV_ADJUST - inventoryBong2x1;
-let soldCommercial2x1 = INV_ADJUST - inventoryCommercial2x1;
-let soldCommercial1x1 = INV_ADJUST - inventoryCommercial1x1;
-
-let totalUnitsSold = soldPersonal2x1 + soldPersonal1x1 + soldBong2x1 + soldBong1x1 + soldCommercial2x1 + soldCommercial1x1;
-let unitsLeft = UNITS_BEING_SOLD - totalUnitsSold;
-
-//set in appropriate HTML except progress bar:
-
-/*document.getElementsByClassName("number_left").innerHTML="hello";
-document.getElementById("asterisk").innerHTML="jello!";
-alert(unitsLeft);*/
 $(".number_left").html(unitsLeft);
-$(".numberSelling").html(UNITS_BEING_SOLD);
-let percentageFunded = (totalUnitsSold/UNITS_BEING_SOLD)*100;
+$(".numberSelling").html(units_being_sold);
+let percentageFunded = (totalUnitsSold/units_being_sold)*100;
 $("#barLegend").html(percentageFunded+"% Funded")
 
 $("#progressBar").css("width", percentageFunded+"%");
