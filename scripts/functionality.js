@@ -34,4 +34,16 @@ $(document).ready(function(){
             scrollTop: $("#timeline").offset().top
         }, 500);
     });
+    $('#image3Sizes').click(function(){
+        $('.nav-tabs a[href="#nav-product"]').tab('show');
+        $('html, body').animate({
+            scrollTop: $("#nav-product").offset().top
+        }, 500);
+    })
+    $('#imageLEEA').click(function(){
+        $('.nav-tabs a[href="#nav-campaign"]').tab('show');
+        $('html, body').animate({
+            scrollTop: $("#nav-campaign").offset().top
+        }, 500);
+    });
 });
